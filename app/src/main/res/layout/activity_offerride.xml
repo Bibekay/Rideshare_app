@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OfferrideActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llOfferride"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:padding="10dp"
+                    android:src="@drawable/vehicle"
+                    android:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="OFFER RIDE"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/llOfferride"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/square" />
+
+            <RelativeLayout
+                android:id="@+id/rlPickpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ivPickpoint"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/location"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etPickpoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@id/ivPickpoint"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/ivPickpoint"
+                    android:background="@color/editTextBG"
+                    android:hint="PICK-UP LOCATION"
+                    android:inputType="text"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDestinationpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlPickpoint"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ivDestinationpoint"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/location"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etDestinationpoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@id/ivDestinationpoint"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/ivDestinationpoint"
+                    android:background="@color/editTextBG"
+                    android:hint="Destination Location"
+                    android:inputType="text"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlDestinationpoint"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ivDate"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/date"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@id/ivDate"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/ivDate"
+                    android:background="@color/editTextBG"
+                    android:hint="JOURNEY DATE"
+                    android:inputType="date"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlDate"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ivTime"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/time"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@id/ivTime"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/ivTime"
+                    android:background="@color/editTextBG"
+                    android:hint="eg: 1:00 PM"
+                    android:inputType="text"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlRidetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlTime"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ivRidetype"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/vehicle"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etRidetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@id/ivRidetype"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/ivRidetype"
+                    android:background="@color/editTextBG"
+                    android:hint="PAID OR NOT"
+                    android:inputType="text"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlRidetype"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ivCost"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/cost"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@id/ivCost"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/ivCost"
+                    android:background="@color/editTextBG"
+                    android:hint="eg: RS:500"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnPostride"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlCost"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/custombutton"
+                android:text="POST"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>/
+
+
+</RelativeLayout>

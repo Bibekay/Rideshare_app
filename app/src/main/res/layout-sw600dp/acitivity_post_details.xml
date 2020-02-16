@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="OFFER RIDE"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rlPickpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/StringPickuppoint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:text="PICK-UP POINT"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvPickuppoint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/StringPickuppoint"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:hint="Pick up point"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rldestiny"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rlPickpoint"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/StringDesrination"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:text="DESTINATION"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvDestination"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/StringDesrination"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:hint="Destination"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlJourney"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rldestiny"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/StringJourneydate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:text="JOURNEY DATE"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvJourneydate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/StringJourneydate"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:hint="Journey date"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPtime"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rlJourney"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/StringTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:text="ARRIVAL TIME"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/StringTime"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:hint="Time"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPaidornot"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rlPtime"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/StringPiadornot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:text="PAID OR NOT"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvPaidornot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/StringPiadornot"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:hint="Paid or not"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlCost"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rlPaidornot"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/Stringcost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:text="RIDE COST"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvCost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/Stringcost"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:hint="No"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnConform"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rlCost"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/custombutton"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:text=" CONFORM REQUEST"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

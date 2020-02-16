@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BikedetailsActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ivBikedetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:padding="10dp"
+                    android:src="@drawable/vehicle"
+                    android:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="BIKE DETAILS"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivSquare"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/ivBikedetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/square" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlVehiclemodel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivSquare"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ivBikeModel"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/vehicle"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etBikemodel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@id/ivBikeModel"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/ivBikeModel"
+                    android:background="@color/editTextBG"
+                    android:hint="Bike Model"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlBikecolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlVehiclemodel"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ivBikecolor"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/color"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etBikecolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@id/ivBikecolor"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/ivBikecolor"
+                    android:background="@color/editTextBG"
+                    android:hint="Bike Color"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlLiscenseno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlBikecolor"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ivLiscenseno"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/number"
+                    android:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etPlateno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@id/ivLiscenseno"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/ivLiscenseno"
+                    android:background="@color/editTextBG"
+                    android:hint="Liscense Plate Number"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnRegisterbike"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/rlLiscenseno"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="30dp"
+                android:background="@drawable/custombutton"
+                android:text="REGISTER"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

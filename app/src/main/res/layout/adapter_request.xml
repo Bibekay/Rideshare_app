@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="280dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/StringOfferride"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="REQUEST RIDE"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/black"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/StringOfferride"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rlPickpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                >
+
+                <TextView
+                    android:id="@+id/StringPickuppoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="PICK-UP POINT"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvPickuppoint"
+                    android:layout_toRightOf="@+id/StringPickuppoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Pick up point"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rldestiny"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_below="@+id/rlPickpoint"
+                android:layout_marginLeft="40dp">
+
+                <TextView
+                    android:id="@+id/StringDesrination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="DESTINATION"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/tvDestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/StringDesrination"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Destination"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlJourney"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/rldestiny"
+                >
+                <TextView
+                    android:id="@+id/StringJourneydate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="JOURNEY DATE"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/tvJourneydate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/StringJourneydate"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Journey date"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPtime"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/rlJourney">
+                <TextView
+                    android:id="@+id/StringTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ARRIVAL TIME"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/StringTime"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Time"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPaidornot"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/rlPtime"
+                >
+
+                <TextView
+                    android:id="@+id/StringPiadornot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="PAID OR NOT"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/tvPaidornot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/StringPiadornot"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Paid or not"/>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlCost"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/rlPaidornot"
+                >
+
+                <TextView
+                    android:id="@+id/Stringcost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="COST"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/tvCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/Stringcost"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:hint="No"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rlCost"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="30dp"
+                android:textSize="15dp"
+                android:background="@drawable/custombutton"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="CONFORM"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
